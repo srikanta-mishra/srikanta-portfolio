@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohel's Portfolio | .NET Developer</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for professional icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Configure Tailwind to use Inter font and smooth scrolling */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        /* Simple background animation for a modern developer look */
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #111827, #1f2937, #0f172a, #27272a);
+            background-size: 400% 400%;
+            animation: gradient-shift 15s ease infinite;
+        }
+        .section-header {
+            position: relative;
+            display: inline-block;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #3b82f6; /* Blue accent */
+            border-radius: 9999px;
+        }
+    </style>
+    <!-- Import Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="animated-bg text-gray-100 min-h-screen">
+
+    <!-- 1. Navigation Header -->
+    <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo: Using the generated SRI Web Solution image -->
+                <a href="#hero" class="text-xl font-bold text-blue-400">
+                    <img src="/Images/Logo.png" alt="SRI Web Solution Logo" class="h-20 w-auto">
+                </a>
+                <div class="flex space-x-4">
+                    <a href="#about" class="text-sm font-medium hover:text-blue-400 transition">About</a>
+                    <a href="#services" class="text-sm font-medium hover:text-blue-400 transition">Services</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- 2. Hero Section -->
+        <section id="hero" class="flex flex-col md:flex-row items-center py-20 md:py-32 text-center md:text-left">
+            
+            <!-- Profile Picture Column: Using the generated profile image -->
+            <div class="flex-shrink-0 w-48 h-48 mb-8 md:mb-0 md:mr-12">
+                <img 
+                    src="/Images/Srikanta Pic.jpg" 
+                    alt="Srikanta Mishra Profile Picture" 
+                    class="rounded-full w-full h-full object-cover border-4 border-blue-500 shadow-2xl transition hover:scale-105 duration-300"
+                    onerror="this.onerror=null; this.src='https://placehold.co/192x192/0E7490/FFFFFF?text=S.S';"
+                >
+            </div>
+            
+            <!-- Text Content Column -->
+            <div>
+                <span class="text-xl text-blue-400 block mb-2">Hello, I'm</span>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-white leading-tight">
+                    SRIKANTA MISHRA <span class="text-blue-400">.</span>
+                </h1>
+                <p class="text-2xl sm:text-3xl font-light text-gray-300 mt-3">
+                    A Dedicated <span class="font-semibold text-white">Software Developer (.NET)</span>
+                </p>
+                <p class="mt-6 text-gray-400 max-w-xl">
+                    I bridge the gap between complex requirements and robust, scalable software solutions & web applications. Specializing in the Microsoft stack, I build high-performance applications that drive business value.
+                </p>
+                <div class="mt-8">
+                    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Me Section -->
+        <section id="about" class="py-16 md:py-24 border-t border-gray-700">
+            <h2 class="section-header text-4xl font-bold mb-10 text-white">About Me</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Professional Summary -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-blue-300">My Journey</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        I started my academic career with a <span class="font-medium text-white">B.Tech in Electrical Engineering</span>, my passion for logic and problem-solving quickly drew me into the world of software development. I successfully transitioned and am now a skilled **Software Developer (.NET)**, focusing on efficient back-end systems and modern architecture.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        I am committed to clean code practices, continuous learning, and delivering impactful digital products. Let's build something great together.
+                    </p>
+                </div>
+                
+                <!-- Details Card -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Key Details</h3>
+                    <dl class="space-y-4 text-gray-300">
+                        <div class="flex items-center">
+                            <span data-lucide="graduation-cap" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></span>
+                            <dt class="font-medium w-1/3">Education</dt>
+                            <dd class="w-2/3">B.Tech Electrical Engineer</dd>
+                        </div>
+                        <div class="flex items-center">
+                            <span data-lucide="code" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></span>
+                            <dt class="font-medium w-1/3">Profession</dt>
+                            <dd class="w-2/3">Software Developer (.NET)</dd>
+                        </div>
+                        <div class="flex items-center">
+                            <span data-lucide="phone" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></span>
+                            <dt class="font-medium w-1/3">Contact No</dt>
+                            <dd class="w-2/3 text-white font-mono">9090217373</dd>
+                        </div>
+                        <div class="flex items-start">
+                            <span data-lucide="map-pin" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0 mt-1"></span>
+                            <dt class="font-medium w-1/3">Address</dt>
+                            <dd class="w-2/3">Sohela, Dist Bargarh, Odisha</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services Section -->
+        <section id="services" class="py-16 md:py-24 border-t border-gray-700">
+            <h2 class="section-header text-4xl font-bold mb-10 text-white">Services</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl">
+                Leveraging my expertise in the Microsoft ecosystem and modern web technologies, I offer a range of specialized services to help individuals and businesses achieve their digital goals.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1: Freelancing -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-blue-500/30 transform hover:scale-[1.02] transition duration-300">
+                    <span data-lucide="briefcase" class="w-8 h-8 text-blue-400 mb-4 block"></span>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Freelancing Projects</h3>
+                    <p class="text-gray-300 text-sm">
+                        Taking on individual projects, from short-term feature development to full application builds, providing flexible and professional technical support.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2: Custom Website Development -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-blue-500/30 transform hover:scale-[1.02] transition duration-300">
+                    <span data-lucide="layout-dashboard" class="w-8 h-8 text-blue-400 mb-4 block"></span>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Custom Website Solutions</h3>
+                    <p class="text-gray-300 text-sm">
+                        Building bespoke, high-performance websites and web applications using modern frameworks and robust back-end architecture (.NET Core/C#).
+                    </p>
+                </div>
+                
+                <!-- Service Card 3: Software Solution -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-blue-500/30 transform hover:scale-[1.02] transition duration-300">
+                    <span data-lucide="database" class="w-8 h-8 text-blue-400 mb-4 block"></span>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Full-Stack Software Solution</h3>
+                    <p class="text-gray-300 text-sm">
+                        End-to-end development of robust enterprise or consumer-facing software, handling everything from database design to API development and deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-16 md:py-24 border-t border-gray-700">
+            <h2 class="section-header text-4xl font-bold mb-10 text-white">Contact Me</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl">
+                Ready to start a project or just want to chat about development? Reach out to me directly!
+            </p>
+
+            <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg">
+                <p class="text-xl font-semibold text-blue-300 mb-4">Let's Connect</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-200">
+                        <span data-lucide="mail" class="w-5 h-5 text-blue-400 mr-4"></span>
+                        <a href="mailto:srikanta.mishra798@gmail.com" class="hover:text-blue-400 transition" target="_blank">srikanta.mishra798@gmail.com <span class="text-sm text-gray-400"></span></a>
+                    </div>
+                    <div class="flex items-center text-gray-200">
+                        <span data-lucide="phone" class="w-5 h-5 text-blue-400 mr-4"></span>
+                        <p class="font-mono">9090217373</p>
+                    </div>
+                    <div class="flex items-center text-gray-200">
+                        <span data-lucide="linkedin" class="w-5 h-5 text-blue-400 mr-4"></span>
+                        <a href="https://www.linkedin.com/in/srikanta-mishra-b9566a71/" class="hover:text-blue-400 transition" target="_blank">srikanta-mishra-b9566a71</a>
+                    </div>
+                </div>
+
+                <!-- Simple Contact Form Placeholder -->
+                <form class="mt-8 space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500 text-white" required>
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500 text-white" required>
+                    <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500 text-white" required></textarea>
+                    <button type="submit" class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 mt-12 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Srikanta Mishra. Built with <span class="text-blue-400">Tailwind CSS</span>.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        // Lucide replacement script to render icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
